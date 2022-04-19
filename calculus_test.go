@@ -25,3 +25,9 @@ func TestMulIntegers(t *testing.T) {
 		t.Error("Mul(1, 2) != 2")
 	}
 }
+
+func TestDivIntegers(t *testing.T) {
+	if Div(6, 2) != 3 {
+		t.Error("Div(6, 2) != 3")
+	}
+}

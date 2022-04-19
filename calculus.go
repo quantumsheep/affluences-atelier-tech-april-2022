@@ -7,7 +7,7 @@ func Add[T constraints.Integer | ~string](a T, b T) T {
 }
 
 func Sub[T constraints.Integer](a T, b T) T {
-	return a * b
+	return a - b
 }
 
 func Mul[T constraints.Integer](a T, b T) T {

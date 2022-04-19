@@ -19,3 +19,9 @@ func TestSubIntegers(t *testing.T) {
 		t.Error("Sub(1, 2) != -1")
 	}
 }
+
+func TestMulIntegers(t *testing.T) {
+	if Mul(1, 2) != 2 {
+		t.Error("Mul(1, 2) != 2")
+	}
+}

@@ -8,6 +8,12 @@ func TestAddIntegers(t *testing.T) {
 	}
 }
 
+func TestAddStrings(t *testing.T) {
+	if Add("a", "b") != "ab" {
+		t.Error(`Add("a", "b") != "ab"`)
+	}
+}
+
 func TestSubIntegers(t *testing.T) {
 	if Sub(1, 2) != -1 {
 		t.Error("Sub(1, 2) != -1")

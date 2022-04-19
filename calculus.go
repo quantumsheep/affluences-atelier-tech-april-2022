@@ -2,19 +2,23 @@ package main
 
 import "golang.org/x/exp/constraints"
 
-func Add[T constraints.Integer | ~string](a T, b T) T {
+type Number interface {
+	constraints.Integer | constraints.Float
+}
+
+func Add[T Number | ~string](a T, b T) T {
 	return a + b
 }
 
-func Sub[T constraints.Integer](a T, b T) T {
+func Sub[T Number](a T, b T) T {
 	return a - b
 }
 
-func Mul[T constraints.Integer](a T, b T) T {
+func Mul[T Number](a T, b T) T {
 	return a * b
 }
 
-func Div[T constraints.Integer](a T, b T) T {
+func Div[T Number](a T, b T) T {
 	return a / b
 }
 

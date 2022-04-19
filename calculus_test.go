@@ -37,3 +37,9 @@ func TestModIntegers(t *testing.T) {
 		t.Error("Mod(6, 2) != 0")
 	}
 }
+
+func TestPowIntegers(t *testing.T) {
+	if Pow(2, 3) != 8 {
+		t.Error("Pow(2, 3) != 8")
+	}
+}

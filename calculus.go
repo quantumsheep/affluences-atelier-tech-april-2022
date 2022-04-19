@@ -1,6 +1,10 @@
 package main
 
-import "golang.org/x/exp/constraints"
+import (
+	"math"
+
+	"golang.org/x/exp/constraints"
+)
 
 func Add[T constraints.Integer | ~string](a T, b T) T {
 	return a + b
@@ -20,4 +24,8 @@ func Div[T constraints.Integer](a T, b T) T {
 
 func Mod[T constraints.Integer](a T, b T) T {
 	return a % b
+}
+
+func Pow[T constraints.Integer](a T, b T) float64 {
+	return math.Pow(float64(a), float64(b))
 }

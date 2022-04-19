@@ -31,3 +31,9 @@ func TestDivIntegers(t *testing.T) {
 		t.Error("Div(6, 2) != 3")
 	}
 }
+
+func TestModIntegers(t *testing.T) {
+	if Mod(6, 2) != 0 {
+		t.Error("Mod(6, 2) != 0")
+	}
+}

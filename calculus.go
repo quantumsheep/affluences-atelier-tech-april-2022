@@ -17,3 +17,7 @@ func Mul[T constraints.Integer](a T, b T) T {
 func Div[T constraints.Integer](a T, b T) T {
 	return a / b
 }
+
+func Mod[T constraints.Integer](a T, b T) T {
+	return a % b
+}
